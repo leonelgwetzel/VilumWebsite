@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Work+Sans:wght@200&display=swap');
+
+nav {
+    background:rgba(999,999,999,0.98);
+    font-family: 'Jura', sans-serif !important;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(/img/6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #header-card{
+    margin-top: 10%;
+    background:rgba(226,226,226,0.7);;
+    color:black;
+    border-radius: 5px;
+    border: 2px solid #1111;
+  }
+
+  #header-title{
+      font-size: 32px !important;
+  }
+
+  #button1 {
+      font-size: 16px;
+      background-color: #604666;
+      color: #ffff;
+      padding: 15px;
+  }
+
+  #button1:hover {
+      background-color:#8f438b;
+  }
+
+
+
+
+
+/*MEDIA QUERYS*/
+
+   @media screen and (min-width: 768px) {
+    #header-card {
+        width: 50%;
+    }
+ 
+   }
+
+   @media screen and (min-width: 0px) and (max-width: 767px) {
+    #header-card {
+        width: 100%;
+        margin-top: 25%;
+    }
+     
+    #header-icon {
+        width: 70px;
+        height: 70px;
+    }
+    #header-title {
+        font-size: 20px !important; 
+    }
+    #header-subtitle {
+        font-size: 14px;
+ 
+   }
+
+}
