@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Work+Sans:wght@200&display=swap');
 
 nav {
-    background:rgba(999,999,999,0.98);
+    background: white;
     font-family: 'Jura', sans-serif !important;
 }
 
 body {
     font-family: 'Work Sans', sans-serif;
+    background-color: #fcfcfc;
+}
+
+p{
+    font-size: 18px;
 }
 
 .masthead {
+    background: linear-gradient(4deg, rgba(117,89,108,1) 0%, rgba(193,167,192,1) 46%, rgba(255,255,255,1) 100%);
     height: 100vh;
     min-height: 500px;
-    background-image: url(/img/6.jpg);
+    /*
+    background-image: url(/img/hola.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    */
   }
 
   #header-card{
@@ -24,6 +32,7 @@ body {
     color:black;
     border-radius: 5px;
     border: 2px solid #1111;
+    width: 80% !important;
   }
 
   #header-title{
@@ -35,15 +44,49 @@ body {
       background-color: #604666;
       color: #ffff;
       padding: 15px;
+      width: 40% !important;
   }
 
   #button1:hover {
       background-color:#8f438b;
   }
 
+.button {
+    font-size: 18px;
+    background-color: #604666;
+    color: #ffff;
+    padding: 15px;
+}
 
+.button:hover{
+    background-color:#8f438b;
+    color: #ffff;
+    text-decoration: none;
+}
 
+hr{
+    height: 5px;
+    width: auto;
+    background-color: #604666;
+}
 
+#about{
+    margin-top: 10%;
+}
+
+.card-border {
+    border: 2px dashed #cdb5d2;
+    border-radius: 20px;;
+    -webkit-box-shadow: 27px 37px 81px -5px rgba(166,154,166,0.46);
+    -moz-box-shadow: 27px 37px 81px -5px rgba(166,154,166,0.46);
+    box-shadow: 27px 37px 81px -5px rgba(166,154,166,0.46);
+}
+
+.div2 {
+    background-color: #fcfcfc;
+    height: 6rem !important;
+    color: #fcfcfc;
+}
 
 /*MEDIA QUERYS*/
 
@@ -54,7 +97,26 @@ body {
  
    }
 
+   /*IPAD*/
+   @media screen and (min-width: 768px) and (max-width: 991px) {
+    #about img {
+        width: 25%;;
+
+    }
+
+    .card-border{
+        margin-bottom: 2rem;
+    }
+
+    }
+
+
+
+
+
    @media screen and (min-width: 0px) and (max-width: 767px) {
+
+
     #header-card {
         width: 100%;
         margin-top: 25%;
@@ -65,11 +127,46 @@ body {
         height: 70px;
     }
     #header-title {
-        font-size: 20px !important; 
+        font-size: 17px !important; 
     }
     #header-subtitle {
         font-size: 14px;
  
+   }
+
+   #empresa {
+       width: 70% !important;
+   }
+
+   #button1 {
+       width: 60% !important;
+       text-align: center;
+       font-size: 11px;
+   }
+
+   .servicios{
+       margin: 20px auto 15px auto;
+   }
+
+   #services-title{
+       font-size: 35px !important;
+   }
+hr {
+       width: 100%;
+   }
+
+   #about-img1{
+       text-align: center;
+       border: none;
+   }
+
+   .spec-card{
+       width: 18rem!important;
+       margin: auto;
+   }
+   
+   .card-border {
+       display:none;
    }
 
 }
