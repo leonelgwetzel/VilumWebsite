@@ -193,60 +193,98 @@
     </section>
 
     <!--Map-->
-    <div class="section" id="map">
+    <div class="section" id="map-cont">
       <div class="container">
         <div class="row">
           <div class="col-12 my-5">
-            <iframe class="text-center" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13133.160586588323!2d-58.5518025!3d-34.6221074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2426e1e738775591!2sGrupo%20Vilum%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1593755879874!5m2!1ses-419!2sar" width="1080" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2321.6365586349993!2d-58.55319265371832!3d-34.62211342879324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7ff2667cf9d%3A0x393058c4a3967790!2sCabildo%202063%2C%20Ciudadela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1593900548567!5m2!1ses-419!2sar" width="100%" height="200" frameborder="0" style="border: 2px dashed #604666;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
       </div>
     </div>
+
     <!--Contact-->
-    <section id="contact">
-      <div class="container">
+    <section id="contact" class="container mt-5 pb-5">
+      <div class="row">
+        <div id="info-contact-left" class="col-sm-12 col-lg-6">
+          <h1 class="text-center">Contáctenos:</h1>
+          <hr>
+          <form action="envia.php" method="post" class="form-consulta"> 
+            <div class="form-input pb-3 mt-5">
+              <input type="text" name="nombre" placeholder="👥 Su Nombre y Apellido"  class="pl-2" required>
+            </div>
+            <div class="form-input pb-3 mt-3">
+              <input type="email" name="email" placeholder="📧 Su dirección de correo"  class="pl-2" required>
+            </div>
+            <div class="form-input pb-3 mt-3">
+              <textarea name="consulta" rows="1" placeholder="📝 Su consulta" class="pl-2"></textarea>                
+            </div>
+            <input id="send-form" class="d-block button w-100 mt-5" type="submit" value="ENVIAR CONSULTA">
+          </form>
+        </div>
 
+        <div id="info-contact-right" class="col-sm-12 col-lg-6 my-auto text-center">
 
-        <div class="row mt-5">
-          <div class="col-sm-12 col-lg-6">
-            <h1>Contactenos:</h1>
-            <hr>
-	          <form action="envia.php" method="post" class="form-consulta"> 
-              <p>Nombre y Apellido</p>
-			          <input type="text" name="nombre"  class="campo-form" required>
-
-		
-              <p class="pt-4">E-Mail:</p>
-			          <input type="email" name="email"class="campo-form" required>
-
-		
-              <p class="pt-4">Consulta:</p>
-                <textarea class="" name="consulta" class="campo-form"></textarea>
-
-
-		          <input id="send-form" class="d-block button w-100 btn-form mt-4" type="submit" value="ENVIAR CONSULTA">
-	          </form>
+          <div class="fact mt-3">
+            <i class="fas fa-map-marked-alt"></i>
+            <h5 class="d-inline-block ml-2">Cabildo 2063, Ciudadela - 3 de Febrero, Bs.As.</h5>
           </div>
 
-          <div class="col-sm-12 col-lg-6">
-            <img src="img/contactos.png">
-        </div>
+          <div class="fact mt-3">
+            <i class="fas fa-envelope"></i>
+            <h5 class="d-inline-block ml-2">ventas@vilum.com.ar</h5>
+          </div>
 
-        </div>
- 
-      </div>
+          <div class="fact mt-3">
+            <i class="fas fa-phone-alt"></i>
+            <h5 class="d-inline-block text-center"> +54 9 11 2308-2218</h5>
+          </div>
+          
+
+          
+
       
+        </div>
+      </div>
+
     </section>
-
-
-
-
-
-
-
+  
+    <!--Footer-->
+  <footer class="page-footer teal pt-4">
+    <div id="footer-body" class="container-fluid text-center text-md-left">
+      <div class="row py-5 pl-1">
+        <div id="footer-left" class="col-md-6 mb-md-0 mb-3 text-left">
+          <p>
+            <i class="fas fa-home mr-3"></i>Cabildo 2063, Ciudadela - 3 de Febrero, Bs.As.</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i>ventas@vilum.com.ar</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>+54 9 11 2308-2218</p>
+        </div>
+        <div class="col-md-6 mt-md-0 mt-3 text-center">
+          <img class="" src="img/logoAluar.png" width="90px" height="90px">
+          <h5 class="text-center mt-2">Certificación ALUAR</h5>
+        </div>
+      </div>
+    </div>
+    <div id="copy" class="row d-flex align-items-center py-2">
+        <div class="col-md-12 col-lg-8 pl-4">
+          <p class="text-center text-md-left h6">© 2020 Copyright: <strong>GRUPO VILUM S.R.L.</strong></p>
+        </div>
+        <div id="site-by" class="col-md-12 col-lg-4 ml-lg-0 text-right pr-4">
+            <p class="d-inline-block h6">Sitio diseñado por:
+                <a target="_blank" href="https://www.linkedin.com/in/leonel-wetzel-13151218a/">Leonel Wetzel</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- Footer -->
 
 
     <!-- Other Js -->
+    <script src="https://kit.fontawesome.com/1f27718693.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
