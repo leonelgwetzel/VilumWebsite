@@ -120,6 +120,7 @@ hr{
 form input, form textarea {
     border: none;
     background-color: #fcfcfc;
+    width:100%;
 }
 
 form textarea {
@@ -136,6 +137,10 @@ form textarea {
     font-size: 15px;
     font-style: italic;
     letter-spacing: 3px;
+}
+
+#info-contact-left {
+    border-right: 1px solid black;
 }
 
 #info-contact-right h5 {

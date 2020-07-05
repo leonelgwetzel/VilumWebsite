@@ -6,7 +6,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Grupo Vilum S.R.L.</title>
-    <link rel="shortcut icon" href="./img/vilum.png"/>
+    <link rel="shortcut icon" href="img/vilum-pestaña.png"/>
 
     <!-- Other CSS -->  
     <link rel="stylesheet" href="./css/estilos.css">
@@ -206,9 +206,14 @@
     <!--Contact-->
     <section id="contact" class="container mt-5 pb-5">
       <div class="row">
+        <div class="col-12">
+          <h1 class="text-center font-weight-bold">Contáctenos:</h1>
+          <hr class="w-50">
+          <h4 class="text-center mb-5">Responderemos su consulta a la brevedad.</h4>
+        </div>
+      </div>
+      <div class="row">
         <div id="info-contact-left" class="col-sm-12 col-lg-6">
-          <h1 class="text-center">Contáctenos:</h1>
-          <hr>
           <form action="envia.php" method="post" class="form-consulta"> 
             <div class="form-input pb-3 mt-5">
               <input type="text" name="nombre" placeholder="👥 Su Nombre y Apellido"  class="pl-2" required>
@@ -219,17 +224,15 @@
             <div class="form-input pb-3 mt-3">
               <textarea name="consulta" rows="1" placeholder="📝 Su consulta" class="pl-2"></textarea>                
             </div>
-            <input id="send-form" class="d-block button w-100 mt-5" type="submit" value="ENVIAR CONSULTA">
+            <input onclick="Enviar()" id="send-form" class="d-block button w-100 mt-5" type="submit" value="ENVIAR CONSULTA">
           </form>
         </div>
 
-        <div id="info-contact-right" class="col-sm-12 col-lg-6 my-auto text-center">
-
+        <div id="info-contact-right" class="col-sm-12 col-lg-6 my-auto text-left">
           <div class="fact mt-3">
             <i class="fas fa-map-marked-alt"></i>
             <h5 class="d-inline-block ml-2">Cabildo 2063, Ciudadela - 3 de Febrero, Bs.As.</h5>
           </div>
-
           <div class="fact mt-3">
             <i class="fas fa-envelope"></i>
             <h5 class="d-inline-block ml-2">ventas@vilum.com.ar</h5>
@@ -288,6 +291,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      function Enviar (){
+        window.alert("Muchas gracias, su consulta fue enviada y se le responderá a la brevedad.")
+      }
     </script>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
