@@ -71,6 +71,14 @@ hr{
     margin-top: 10%;
 }
 
+#about a {
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
 #empresa{
     width: 450px;
     height: 450px;
@@ -144,7 +152,7 @@ form textarea {
 }
 
 #info-contact-right h5 {
-    font-size: 16px !important;
+    font-size: 20px !important;
     font-weight: bold;
 }
 
@@ -169,7 +177,8 @@ form textarea {
 
 
 #copy {
-
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     background-color: black;
     color: white;
 }
@@ -284,4 +293,15 @@ form textarea {
        text-align: center !important;
    }
 
+   #info-contact-left {
+    border-right: 0;
 }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 348px) {
+    #info-contact-right h5{
+        font-size: 12px !important;
+    }
+
+    }
