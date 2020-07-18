@@ -12,37 +12,43 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
   <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-aos="fade-down" data-aos-duration="1000">
-      <a class="navbar-brand text-left" href="#">
-        <img class="d-inline-block" src="img/vilum2.png" width="45px" height="55px" alt="">
-        <span class="font-weight-bold h6">GRUPO VILUM S.R.L.</span>
-      </a>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-aos="fade-down" data-aos-duration="1000">
+    <a class="navbar-brand text-left" href="#">
+      <img class="d-inline-block" src="img/vilum2.png" width="45px" height="55px" alt="">
+      <span class="font-weight-bold h6">GRUPO VILUM S.R.L.</span>
+    </a>
 
-      <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-div">Empresa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      </div>
-    </nav>
+    <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Nuestra-Empresa">Empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="obras.html">Obras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
 
+  <!--Whatsapp-->
+  <a id="wp-link" target="_blank" class="fixed-bottom text-right ml-auto mr-3" href="https://api.whatsapp.com/send?phone=541123082218">
+    <i id="wp-button" class="fab fa-whatsapp h1"></i>
+  </a>
   <!--Header-->
     <header class="masthead">
       <div class="container h-100">
@@ -62,7 +68,7 @@
     </header>
     
   <!--Div-->
-    <div id="about-div" class="div2">
+    <div id="Nuestra-Empresa" class="div2">
       <p>.</p>
     </div>
   <!--About us-->
@@ -84,7 +90,7 @@
                 integral de un gran edificio.</p>
               <br>
               <p><span class="ml-3">En</span> nuestra empresa nos adecuamos a sus requerimientos, proporcionando una solución armoniosa para su presupuesto.</p>
-              <a href="empresa.html" class="btn button w-100">CONOCER MÁS</a>
+              <a href="obras.html" class="btn button w-100">CONOZCA NUESTRAS OBRAS</a>
             </div>
 
           </div>
@@ -175,7 +181,7 @@
             <div class="mx-auto card ml-auto servicios">
               <img class="card-img-top img-fluid" src="img/vidrios.png"  alt="Card image cap">
               <div class="card-body p-0">
-                <a href="vidrieria.html" class="button btn-block text-center">PROCESAMIENTO DE CRISTALES</a>
+                <a href="productos.html#Vidrieria" class="button btn-block text-center">PROCESAMIENTO DE CRISTALES</a>
               </div>
             </div>
           </div>
@@ -184,7 +190,7 @@
             <div class="mx-auto card mr-auto servicios">
               <img class="card-img-top img-fluid" src="img/aluminio.jpg" alt="Card image cap">
               <div class="card-body p-0">
-                <a href="carpinteria-metalica.html" class="button btn-block text-center">CARPINTERIA DE ALUMINIO</a>
+                <a href="productos#Carpinteria-Metalica" class="button btn-block text-center">CARPINTERIA DE ALUMINIO</a>
               </div>
             </div>
           </div>
@@ -203,6 +209,10 @@
       </div>
     </div>
 
+  <!--Div-->
+  <div id="Contacto" class="div2">
+    <p>.</p>
+  </div>
   <!--Contact-->
     <section id="contact" class="container mt-5 pb-5">
       <div class="row">
@@ -230,7 +240,7 @@
         <div id="info-contact-right" class="col-sm-12 col-lg-6 my-auto text-left pt-md-4">
           <div class="fact mt-3">
             <i class="fas fa-map-marked-alt"></i>
-            <h5 class="d-inline-block ml-2">Cabildo 2063, Ciudadela - 3 de Febrero, Bs.As.</h5>
+            <a id="map-link" target="_blank" href="https://goo.gl/maps/jPG1s9nsGmM3ygGN7"><h5 class="d-inline-block ml-2">Cabildo 2063, Ciudadela - 3 de Febrero, Bs.As.</h5></a>
           </div>
           <div class="fact mt-3">
             <i class="fas fa-envelope"></i>
