@@ -68,14 +68,35 @@ hr{
     background-color: #604666;
 }
 
+#wp-link{
+    width: min-content;
+    height: min-content;
+}
+
 #wp-link img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8rem;
+    opacity: 0.6;
+}
+
+#wp-link img:hover{
+    opacity: 1;
+}
+
+#insta-link {
+    width: min-content;
+    height: min-content;
+}
+
+#insta-link img{
     width: 50px;
     height: 50px;
     margin-bottom: 4rem;
     opacity: 0.6;
 }
 
-#wp-link img:hover{
+#insta-link img:hover{
     opacity: 1;
 }
 
@@ -222,14 +243,9 @@ form textarea {
         margin-bottom: 1rem !important;
     }
     #wp-link{
-        margin-right: 2rem !important;
-        margin-bottom: 5rem !important;
+        margin-bottom: 7rem !important;
     }
-    #wp-link{
-        margin-right: 1.2em !important;
-        margin-bottom: 2rem !important;
-    }
-    }
+}
 
 
    @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -316,9 +332,17 @@ form textarea {
    #info-contact-left {
     border-right: 0;
 }
-    #wp-link{
-        margin-right: 1.2em !important;
-        margin-bottom: 2rem !important;
+    #wp-link img{
+        margin-right: 1rem;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 7rem;
+    }
+
+    #insta-link img{
+        margin-right: 1rem;
+        width: 40px;
+        height: 40px;
     }
 
 
