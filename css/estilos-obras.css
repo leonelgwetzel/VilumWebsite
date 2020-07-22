@@ -1,22 +1,22 @@
+
 .galeria-obras .col-lg-4{
     margin: 0 !important;
     padding: 20px;
 }
 
-.card {
-    border: 0px;
+.obra-body{
+    background-color: #fcfcfc;
+    border-bottom : 3px solid #604666;
 }
 
-.card-body {
-    background-color: #fcfcfc;
-    border-bottom : 10px solid #604666;
-}
 
 .galeria-obras img {
     width: 100%;
     height: 250px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
 }
 
 .galeria-obras img:hover{
-    border: 3px solid #ffff;
+    border: 2px solid black;
 }

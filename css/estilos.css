@@ -121,6 +121,8 @@ hr {
 #empresa {
   width: 450px;
   height: 450px;
+  border: 2px solid #604666   !important;
+  border-radius: 0.5rem;
 }
 
 .card-border {
@@ -202,7 +204,16 @@ form textarea {
 }
 
 #map-link {
-  color: #000000 !important;
+  color: #000000;
+}
+
+#email-link {
+  color:  #000000;
+}
+
+#email-link h5:hover, #map-link h5:hover{
+  color: #604666;
+  text-decoration: underline;
 }
 
 #vasa {
@@ -217,6 +228,7 @@ form textarea {
 }
 
 #vasa-footer {
+  width: 100%;
   background: #46374a;
   letter-spacing: 5px;
   opacity: 0.85;
@@ -414,5 +426,13 @@ form textarea {
 @media screen and (min-width: 0px) and (max-width: 348px) {
   #info-contact-right h5 {
     font-size: 12px !important;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 326px) {
+  #info-contact-right h5 {
+    font-size: 10px !important;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 }
