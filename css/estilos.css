@@ -76,7 +76,8 @@ hr {
 
 #wp-link {
   width: min-content;
-  height: min-content;
+  height: 30px;
+  margin-bottom: 100px;
 }
 
 #wp-link img {
@@ -87,22 +88,6 @@ hr {
 }
 
 #wp-link img:hover {
-  opacity: 1;
-}
-
-#insta-link {
-  width: min-content;
-  height: min-content;
-}
-
-#insta-link img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 4rem;
-  opacity: 0.6;
-}
-
-#insta-link img:hover {
   opacity: 1;
 }
 
@@ -305,6 +290,16 @@ form textarea {
   display: block;
 }
 
+#social-icons{
+  background-color: #46374a;
+  font-size: 20px;
+}
+
+#social-icons a{
+  text-decoration: none !important;
+  color: #fff;
+}
+
 /*MEDIA QUERYS*/
 
 /*IPAD*/
@@ -414,12 +409,6 @@ form textarea {
     width: 40px;
     height: 40px;
     margin-bottom: 7rem;
-  }
-
-  #insta-link img {
-    margin-right: 1rem;
-    width: 40px;
-    height: 40px;
   }
 }
 
